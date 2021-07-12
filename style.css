@@ -1,0 +1,322 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:300';
+
+/*========== RESET =========*/
+* {margin: 0; padding: 0;}
+a {text-decoration: none;}
+
+/*========== HEADER =========*/
+.header {width: 100%; float: left; padding: 15px 0 10px 0; background-color: #FFF; border-bottom: 1px solid #E8E8E8;}
+.header #btn-menu {width: 30px; cursor: pointer; border: none; background-color: transparent; display: block; float: left; margin-left: 3%;}
+.header #btn-menu img {width: 100%;}
+.header #menu {width: 90%; height: 100% !important; position: fixed; background-color: #FFF; border-right: 1px solid #CFCFCF; box-shadow: 1px 5px 10px #1C1C1C; top: 0; left: 0; display: none; z-index: 2; overflow: auto;}
+.header #topo-menu {width: 100%; float: left; border-bottom: 2px solid #E8E8E8; padding: 20px 0 15px 0;}
+.header #topo-menu img {width: 80%; float: left; margin: 6px 0 0 4%;}
+.header #btn-fechar-menu, #btn-fechar-carrinho {width: 30px; height: 40px; font-size: 2em; font-family: 'Raleway'; font-weight: normal; color: #B5B5B5;	float: right; margin-right: 3%; border: none; cursor: pointer; background-color: transparent;}
+.header #btn-fechar-menu:hover, #btn-fechar-carrinho:hover {color: #CFCFCF;}
+.header #menu ul {width: 100%; float: left;}
+.header #menu ul li {list-style-type: none; text-align: center;}
+.header #menu ul li a {width: 100%; font-size: 1.2em; font-family: 'Arial'; color: #696969; padding: 30px 0; display: block;}
+.header #menu ul li a:hover {background-color: #E8E8E8; transition: .5s;}
+.header #logotipo {width: 60px; float: left; margin: 2px 0 0 10px;}
+.header #logoGrande {display: none;}
+.header #logotipo img {width: 100%;}
+.header #pesquisa {display: none;}
+.header #carrinho {float: right; margin-right: 3%; margin-top: -5px;}
+.header #carrinho button {width: 37px; height: 35px; float: left; border: none; background-color: transparent;}
+.header #carrinho button:hover {cursor: pointer;}
+.header #carrinho img {width: 28px;	margin-left: 5px; float: left;}
+.header #carrinho p {margin: 7px auto auto 14px; position: absolute; color: #FFF;}
+.header #itens-carrinho {width: 90%; height: 100% !important; position: fixed; background-color: #FFF; border-left: 1px solid #CFCFCF; font-family: 'Raleway'; top: 0; right: 0; display: none; z-index: 2; overflow: auto;}
+.header #topo-carrinho {width: 100%; float: left; padding: 5px 0; background-color: #1C1C1C;}
+.header #topo-carrinho h6 {font-size: .8em; font-weight: normal; color: #FFF; text-align: center; text-transform: uppercase; margin-top: 12px;}
+.header #total-compra {width: 100%; float: left; border-bottom: 1px solid #E8E8E8; padding: 13px 0;}
+.header #total-compra h6 {float: left; font-size: .8em; margin: 5px 0 0 15px;}
+.header #total-compra h5 {float: right; font-size: 1.2em; font-family: 'Arial'; font-weight: normal; margin-right: 15px; color: #363636;}
+.header #checkout-login {width: 100%; float: left; text-align: center;}
+.header #checkout-login a {width: 95%; text-transform: uppercase; display: block; margin: 5px auto; padding: 8px 0; font-weight: bold; background-color: #000; border: none; color: #FFF;}
+.header #checkout-login a:hover {background-color: #363636;}
+.header #item-produto {width: 100%; float: left; padding: 15px 0 0 0; border-bottom: 2px dashed #E8E8E8;}
+.header #item-produto img {width: 80px;	float: left; margin: 0 2%;}
+.header #item-produto h4, #item-produto h5, #item-produto h6 {font-weight: normal; font-size: .8em; margin-right: 1%; color: #363636;}
+.header #item-produto h4 {margin-bottom: 5px; font-size: 1em; color: #1C1C1C;}
+.header #item-produto h5 {font-size: .9em; margin-top: 3px;}
+.header #item-produto #botoes {width: 100%; float: left; padding: 20px 0;}
+.header #item-produto button {width: 42%; float: left; margin: 0 4%; border: 1px solid #363636; background-color: transparent; cursor: pointer; padding: 5px 0; text-transform: uppercase;}
+.header #item-produto button a {text-transform: uppercase; color: #000;}
+.header #item-produto button:hover {border: 1px solid #9C9C9C;}
+
+/*========== INDEX =========*/
+.contentIndex {width: 100%; float: left;}
+.contentIndex .slider {width: 100%; float: left; overflow: hidden;}
+.contentIndex .slider img {width: 100%;}
+.contentIndex .slider ul {display: flex; padding: 0; width: 400%; animation: cambio 20s infinite;}
+.contentIndex .slider ul li {width: 100%; list-style: none;}
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+.contentIndex .lblNovidades {width: 100%; float: left; text-align: center; padding-top: 50px;}
+.contentIndex .lblNovidades h3 {font-size: .9em; font-family: 'Raleway';	text-transform: uppercase; color: #4F4F4F;}
+.contentIndex .lblNovidades hr {width: 40px;	margin: 5px auto auto auto;	border: 1px solid #9C9C9C;}
+.contentIndex .novidades {width: 100%; float: left; padding: 50px 0;}
+.contentIndex .categoriasNovidades {width: 100%;	float: left;}
+.contentIndex .categoriaNovidade {width: 90%; margin: 0 auto;}
+.contentIndex .categoriaNovidade img {width: 100%;}
+.contentIndex .destaques {width: 100%; float: left; padding-bottom: 60px; font-family: 'Raleway';}
+.contentIndex .produtosDestaques {width: 90%; margin: 0 auto;}
+.contentIndex .produtoDestaque {width: 48%; height: 280px; float: left; text-align: center; margin: 0 2px;}
+.contentIndex .produtoDestaque img {width: 100px;}
+.contentIndex .produtoDestaque h4, .contentIndex .produtoDestaque h5 {color: #1C1C1C; font-size: .9em; font-weight: normal; text-align: center; margin-top: 5px;}
+
+/*========== FOOTER =========*/
+.footer {width: 100%; float: left; font-family: 'Arial';}
+.footer .informacoesFooter {width: 100%; float: left; border-top: 1px solid #CFCFCF; border-bottom: 1px solid #CFCFCF; padding: 20px 0;}
+.footer .informacoesFooter .informacaoFooter {width: 100%; float: left; text-align: center;}
+.footer .informacoesFooter .informacaoFooter h1 {font-size: 1em; font-weight: normal; text-transform: uppercase; margin: 20px auto 10px auto; color: #363636;}
+.footer .informacoesFooter .informacaoFooter p {margin-top: 3px;}
+.footer .informacoesFooter .informacaoFooter li {list-style-type: none;}
+.footer .informacoesFooter .informacaoFooter li a, .informacao-footer p {color: #696969; font-size: .8em;}
+.footer .informacoesFooter .informacaoFooter li a:hover {color: #828282;}
+.footer .txtFooter {font-size: .8em; width: 100%; float: left;	color: #828282; text-align: center;	background-color: #FFF; padding: 12px 0;}
+
+/*========== BUSCA =========*/
+.contentBuscaOpcao {width: 100%; float: left;}
+.contentBuscaOpcao .banner {width: 100%; float: left;}
+.contentBuscaOpcao .banner img {width: 100%;}
+.contentBuscaOpcao .tituloMenu {width: 100%; float: left;}
+.contentBuscaOpcao .tituloMenu h2 {width: 90%; color: #363636; font-family: 'Arial'; font-weight: normal;	margin: 20px 0 20px 4%; border-bottom: 1px solid #E8E8E8; padding-bottom: 15px;}
+.contentBuscaOpcao .tituloMenu h6 {font-size: .9em; font-family: 'Arial'; font-weight: normal; text-transform: uppercase; color: #363636;	float: right; margin-right: 4%;}
+.contentBuscaOpcao .conteudoProdutos {width: 100%; float: left; padding: 20px 0 60px 0; font-family: 'Raleway';}
+.contentBuscaOpcao .conteudoProdutos .todosProdutos {width: 90%; margin: 0 auto;}
+.contentBuscaOpcao .conteudoProdutos .todosProdutos .produto {width: 100%; float: left; margin-bottom: 30px;}
+.contentBuscaOpcao .conteudoProdutos .todosProdutos .produto a img {width: 100%;}
+.contentBuscaOpcao .conteudoProdutos .todosProdutos .produto a h4, .contentBuscaOpcao .conteudoProdutos .todosProdutos .produto a h5 {color: #1C1C1C; font-size: .9em; font-weight: normal; text-align: center; margin-top: 5px;}
+
+/*========== FAQ =========*/
+.contentFaq {width: 100%; float: left;}
+.contentFaq .faq {width: 100%; float: left; padding-bottom: 30px; font-family: 'Raleway';}
+.contentFaq .faq h2 {width: 92%; font-size: 1.3em; font-weight: normal; margin: 30px 0 0 4%; padding-bottom: 20px; border-bottom: 1px solid #B5B5B5; text-transform: uppercase;}
+.contentFaq .faq .perguntas {width: 100%; float: left;}
+.contentFaq .faq .perguntaResposta {width: 92%; padding: 20px 0; margin: 0 4%; border-top: 1px solid #B5B5B5; float: left;}
+.contentFaq .faq .perguntaResposta:nth-child(1) {border-top: none;}
+.contentFaq .faq .perguntaResposta h6 {font-size: 1em; font-weight: normal; text-transform: uppercase;}
+.contentFaq .faq .perguntaResposta p {font-size: .8em; color: #4F4F4F; float: left; padding: 10px; margin-top: 20px; text-align: justify;}
+
+/*========== LOGIN =========*/
+.contentLogin {width: 100%; float: left;}
+.contentLogin .banner {width: 100%; float: left; padding: 50px 0;}
+.contentLogin .banner h1 {text-align: center; font-size: 1.7em; font-family: 'Arial'; font-weight: normal; color: #828282; text-transform: uppercase;}
+.contentLogin .loginUsuario, .contentLogin .novaContaUsuario {width: 100%; float: left; padding: 40px 0 60px 0; font-family: 'Raleway';}
+.contentLogin .loginUsuario h2, .contentLogin .novaContaUsuario h2 {margin-left: 3%; font-weight: normal; font-size: 1.1em; text-transform: uppercase;}
+.contentLogin .loginUsuario form, .contentLogin .novaContaUsuario form {width: 100%; float: left; padding-top: 30px;}
+.contentLogin .loginUsuario form label, .contentLogin .novaContaUsuario form label {font-size: .8em; text-transform: uppercase; margin-left: 3%;}
+.contentLogin .loginUsuario form input, .contentLogin .novaContaUsuario form input {width: 93%; display: block; margin: 5px 0 15px 3%; padding: 7px 0; color: #1C1C1C;}
+.contentLogin .loginUsuario form button, .contentLogin .novaContaUsuario form button {width: 93%; margin: 20px 0 0 3%; padding: 7px 0; background-color: #000; color: #FFF; font-weight: bold; font-family: 'Arial'; border: none; text-transform: uppercase;}
+.contentLogin .loginUsuario form button:hover, .contentLogin .novaContaUsuario form button:hover {background-color: #363636; cursor: pointer;}
+.contentLogin .novaContaUsuario {margin-top: 0; border-top: 1px solid #E8E8E8;}
+.contentLogin .novaContaUsuario form input[type="checkbox"] {width: auto; display: inline;}
+.contentLogin .novaContaUsuario form label span {margin-left: -10px; font-size: .9em;}
+
+/*========== MEU CARRINHO =========*/
+.contentMeuCarrinho .{width: 1280px; float: none; margin: 0 auto;}
+.contentMeuCarrinho .meuCarrinho {width: 100%; float: left; font-family: 'Arial'; padding: 50px 0;}
+.contentMeuCarrinho .meuCarrinho h2 {width: 94%; border-bottom: 1px solid #E8E8E8; font-weight: normal; color: #696969; padding-bottom: 10px; margin-left: 38px;}
+.contentMeuCarrinho .meuCarrinho .botaoVoltar {float: left; margin-left: 38px; padding: 30px 0;}
+.contentMeuCarrinho .meuCarrinho .botaoVoltar a {padding: 8px 50px; text-transform: uppercase; font-size: 1em; font-family: 'Raleway'; color: #1C1C1C; border: 1px solid #696969;}
+.contentMeuCarrinho .meuCarrinho .botaoVoltar a:hover {border: 1px solid #9C9C9C; color: #9C9C9C;}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho {width: 94%; float: left; font-family: 'Arial'; font-size: .9em; margin-left: 38px;}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho fieldset {width: 100%; margin-top: 10px; border: none;}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho .tblMeuCarrinho .itemCarrinho {width: 500px;}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho .tblMeuCarrinho .itemCarrinho a img {width: 130px; float: left; margin-right: 20px;}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho .tblMeuCarrinho .itemCarrinho a .nomeProduto {padding: 0 20px;}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho .tblMeuCarrinho .itemCarrinho a {color: rgb(72, 72, 72);}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho .tblMeuCarrinho .itemCarrinho .detalhes span {display: block;}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho .tblMeuCarrinho .itemCarrinho .detalhes .codigoProduto {margin-top: 5px; font-size: .8em; font-weight: bold; color: rgb(163, 163, 163);}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho .tblMeuCarrinho .itemCarrinho .detalhes .corProduto {margin-top: 15px; font-size: .9em; color: rgb(59, 59, 59);}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho .tblMeuCarrinho .itemCarrinho .detalhes .tamanhoProduto {font-size: .9em; color: rgb(59, 59, 59);}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho .tblMeuCarrinho .removerItem button {margin: 0 30px; border: none; background-color: transparent;}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho .tblMeuCarrinho .removerItem button:hover {cursor: pointer;}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho .tblMeuCarrinho .quantidadeItens input {width: 70px; padding: 5px; margin: 0 30px;}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho .tblMeuCarrinho .precoItem {width: 100px; text-align: center;}
+.contentMeuCarrinho .meuCarrinho .formMeuCarrinho .tblMeuCarrinho .total {width: 300px; padding: 0 10px; text-align: center;}
+.contentMeuCarrinho .meuCarrinho .valorTotalCompra {width: 193px; float: right; font-family: 'Arial'; text-align: center; margin-top: 40px;}
+.contentMeuCarrinho .meuCarrinho .valorTotalCompra span {color: #1C1C1C;}
+.contentMeuCarrinho .meuCarrinho .valorTotalCompra .valorTotal {font-size: 1.2em; font-weight: bold;}
+.contentMeuCarrinho .meuCarrinho .valorTotalCompra a {padding: 10px 30px; float: left; text-transform: uppercase; color: #1C1C1C; background-color: #000; color: #FFF; border: none; margin-top: 10px;}
+.contentMeuCarrinho .meuCarrinho .valorTotalCompra a:hover {background-color: #363636; cursor: pointer;}
+
+/*========== DADOS USUÁRIO =========*/
+.contentDados {width: 100%;	float: left;}
+.contentDados .contaPerfil {width: 100%; float: left; font-family: 'Raleway'; padding: 50px 0;}
+.contentDados .contaPerfil h2 {width: 94%; border-bottom: 1px solid #E8E8E8; font-weight: normal; color: #696969; padding-bottom: 10px; margin-left: 3%;}
+.contentDados .contaPerfil span {font-family: 'Arial';color: #FF0000;}
+.contentDados .contaPerfil p {font-size: .8em; padding: 10px 0 0 3%;}
+.contentDados .contaPerfil legend {font-weight: normal; text-transform: uppercase; padding: 30px 0 0 5%;}
+.contentDados .contaPerfil .dadosUsuario {width: 90%; margin: 0 auto;	padding-bottom: 30px; border-bottom: 1px solid #E8E8E8;}
+.contentDados .contaPerfil .dadosUsuario label {width: 130px; font-size: .8em; padding: 20px 0 0 5%; display: block;}
+.contentDados .contaPerfil .dadosUsuario input, #dados-usuario select {width: 90%; margin: 5px 0 0 5%; padding: 5px 0; border: 1px solid #9C9C9C;}
+.contentDados .contaPerfil .dadosUsuario select {width: 100px;}
+.contentDados .contaPerfil .dadosUsuario button {width: 150px; padding: 7px 0; display: block; margin-top: 30px; cursor: pointer; background-color: #000; color: #FFF; border: none;}
+.contentDados .contaPerfil .dadosUsuario button:hover {background-color: #1C1C1C;}
+
+/*========== PAINEL DE CONTROLE =========*/
+.contentPainelControle {width: 100%; float: left;}
+.contentPainelControle .painelControle {width: 100%; float: left; font-family: 'Raleway'; padding: 50px 0;}
+.contentPainelControle .painelControle h2 {width: 94%; border-bottom: 1px solid #E8E8E8; font-weight: normal; color: #696969; padding-bottom: 10px; margin-left: 3%;}
+.contentPainelControle .opcaoControle {width: 94%; margin: 20px auto 0 auto; background-color: rgb(245, 245, 245); padding: 20px 0;}
+.contentPainelControle .opcaoControle h5 {font-size: 1.3em; font-weight: normal; margin-left: 20px;}
+.contentPainelControle .opcaoControle p {font-size: .8em; margin: 5px 0 10px 20px; font-weight: normal;}
+.contentPainelControle .opcaoControle a {font-size: .8em; margin-left: 20px; color: #1C1C1C; text-decoration: underline;}
+.contentPainelControle .opcaoControle a:hover {color: #4F4F4F; text-decoration: none;}
+.contentPainelControle .opcaoControle table {width: 100%;}
+.contentPainelControle .opcaoControle table tr {font-family: 'Arial'; font-weight: normal; font-size: .7em; color: #FFF; text-align: center;}
+.contentPainelControle .opcaoControle table tr:nth-child(1) {background-color: #9C9C9C; word-wrap: break-word;}
+.contentPainelControle .opcaoControle table tr:nth-child(even) {background-color: #E8E8E8;}
+.contentPainelControle .opcaoControle table tr td {padding: 5px 0; color: #363636;}
+.contentPainelControle .opcaoControle table tr td a {margin-left: 0;}
+
+/*========== POLÍTICAS DE PRIVACIDADE =========*/
+.contentPoliticasPrivacidade {width: 100%; float: left;}
+.contentPoliticasPrivacidade .politicasPrivacidade {width: 100%; float: left; padding-bottom: 60px; font-family: 'Raleway';}
+.contentPoliticasPrivacidade .politicasPrivacidade h2 {width: 92%; font-size: 1.3em; font-weight: normal; margin: 30px 0 0 4%; padding-bottom: 20px; border-bottom: 1px solid #B5B5B5; text-transform: uppercase;}
+.contentPoliticasPrivacidade .politicasPrivacidade h3, .contentPoliticasPrivacidade .politicasPrivacidade h4 {font-size: 1.1em; font-weight: normal; margin: 30px 4% 0 4%; text-transform: uppercase;}
+.contentPoliticasPrivacidade .politicasPrivacidade h4 {text-transform: none; font-size: 1em; margin-top: 20px;}
+.contentPoliticasPrivacidade .politicasPrivacidade p {font-size: .8em; font-family: 'Arial'; color: #4F4F4F; margin: 10px 4% 0 4%;}
+
+/*========== PRODUTO =========*/
+.contentProduto .{width: 100%; float: left;}
+.contentProduto .detalhesProduto {width: 100%; float: left; padding: 50px 0 100px 0;}
+.contentProduto .detalhesProduto .imagensProduto {width: 90%; margin: 0 auto; position: relative;}
+.contentProduto .detalhesProduto .imagensProduto .imagemProduto {display: none;}
+.contentProduto .detalhesProduto .imagensProduto .imagemProduto img {width: 100%;}
+.contentProduto .detalhesProduto .imagensProduto .btnAntes, .contentProduto .detalhesProduto .imagensProduto .btnDepois {width: auto; cursor: pointer; position: absolute; top: 50%; margin-top: -22px; padding: 16px; color: #FFF; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 3px 3px 0; background-color: rgba(0, 0, 0, 0.1);}
+.contentProduto .detalhesProduto .imagensProduto .btnDepois {right: 0; border-radius: 3px 0 0 3px;}
+.contentProduto .detalhesProduto .imagensProduto .btnAntes:hover, .contentProduto .detalhesProduto .imagensProduto .btnDepois:hover {background-color: rgba(0, 0, 0, 0.8);}
+.contentProduto .detalhesProduto .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+.contentProduto .detalhesProduto .formProduto {width: 90%; margin: 0 auto; color: #363636; font-family: 'Raleway'; padding-bottom: 30px;}
+.contentProduto .detalhesProduto .formProduto h4, .contentProduto .detalhesProduto .formProduto h6, .contentProduto .detalhesProduto .formProduto h5 {font-weight: normal;}
+.contentProduto .detalhesProduto .formProduto h4 {font-size: 1.5em;}
+.contentProduto .detalhesProduto .formProduto h6 {font-family: 'Arial'; font-size: .7em; margin-top: 5px;}
+.contentProduto .detalhesProduto .formProduto h5 {font-family: 'Arial'; font-size: 1.3em; margin-top: 40px;}
+.contentProduto .detalhesProduto .formProduto .opcoesCoresCroduto {margin-top: 40px;}
+.contentProduto .detalhesProduto .formProduto .opcoesCoresCroduto h6, #opcoes-cores-produto label {font-size: .8em; color: #696969;}
+.contentProduto .detalhesProduto .formProduto .opcoesCoresProduto input {margin-top: 5px;}
+.contentProduto .detalhesProduto .formProduto .quantidadeProduto {margin-top: 20px;}
+.contentProduto .detalhesProduto .formProduto .quantidadeProduto label {font-size: .8em; font-weight: normal;}
+.contentProduto .detalhesProduto .formProduto .quantidadeProduto input[type="number"] {width: 60px; margin-top: 5px; padding: 5px; border: 1px solid #B5B5B5; color: #696969;}
+.contentProduto .detalhesProduto .formProduto .opcoesTamanhosProduto {margin-top: 20px;}
+.contentProduto .detalhesProduto .formProduto .opcoesTamanhosProduto label {font-size: .8em; font-weight: normal;}
+.contentProduto .detalhesProduto .formProduto .opcoesTamanhosProduto select {width: 150px; margin-top: 5px; padding: 5px; border: 1px solid #B5B5B5; color: #696969;}
+.contentProduto .detalhesProduto .formProduto input[type="submit"] {width: 100%; height: 35px; background-color: #000; border: none; color: #FFF; font-size: .9em; font-weight: bold; margin-top: 40px;}
+.contentProduto .detalhesProduto .formProduto input[type="submit"]:hover {background-color: #363636; cursor: pointer;}
+.contentProduto .detalhesProduto .formProduto .descricaoProduto {margin-top: 50px;}
+.contentProduto .detalhesProduto .formProduto .descricaoProduto h6 {font-size: 1.3em;}
+.contentProduto .detalhesProduto .formProduto .descricaoProduto p {font-size: .8em; margin-top: 10px;}
+
+/*========== SOBRE =========*/
+.contentSobre {width: 100%; float: left;}
+.contentSobre .banner {width: 100%; float: left;}
+.contentSobre .banner img {width: 100%;}
+.contentSobre .sobre {width: 100%; float: left; padding-bottom: 60px; font-family: 'Raleway';}
+.contentSobre .sobre h2 {width: 92%; font-size: 1.3em; font-weight: normal; margin: 30px 0 0 4%; text-transform: uppercase; padding-bottom: 20px; border-bottom: 1px solid #B5B5B5; text-transform: uppercase;}
+.contentSobre .sobre p {font-size: .9em; font-family: 'Arial'; color: #4F4F4F; margin: 30px 4% 0 4%;}
+
+/*========== TERMOS DE USO =========*/
+.contentTermosUso {width: 100%; float: left;}
+.contentTermosUso .termosUso {width: 100%; float: left; padding-bottom: 60px; font-family: 'Raleway';}
+.contentTermosUso .termosUso h2 {width: 92%; font-size: 1.3em; font-weight: normal; margin: 30px 0 0 4%; padding-bottom: 20px; border-bottom: 1px solid #B5B5B5; text-transform: uppercase;}
+.contentTermosUso .termosUso h3 {font-size: 1.1em; font-weight: normal; margin: 30px 4% 0 4%; text-transform: uppercase;}
+.contentTermosUso .termosUso p {font-size: .8em; font-family: 'Arial'; color: #4F4F4F; margin: 10px 4% 0 4%;}
+
+/*========== TROCAS E DEVOLUÇÕES =========*/
+.contentTrocasDevolucoes {width: 100%; float: left;}
+.contentTrocasDevolucoes .trocasDevolucoes {width: 100%; float: left; padding: 80px 0 120px 0; font-family: 'Raleway';}
+.contentTrocasDevolucoes .trocasDevolucoes h2 {width: 92%; font-size: 1.3em; font-weight: normal; margin: 30px 0 0 4%; padding-bottom: 20px; border-bottom: 1px solid #B5B5B5; text-transform: uppercase;}
+.contentTrocasDevolucoes .trocasDevolucoes h3 {font-size: 1.1em; font-weight: normal; margin: 30px 4% 0 4%; text-transform: uppercase;}
+.contentTrocasDevolucoes .trocasDevolucoes p {font-size: .8em; font-family: 'Arial'; color: #4F4F4F; margin: 10px 4% 0 4%;}
+
+/*========== RESPONSIVE =========*/
+@media screen and (min-width: 400px) {
+	.header #menu, .header #itens-carrinho {width: 360px;}
+	.header #topo-menu img {width: 260px; margin: 0 0 0 20px;}
+	.header #item-produto h4 {margin-bottom: 10px;}
+	.header #item-produto h5 {margin-top: 10px;}
+	.contentPainelControle .opcaoControle table tr {font-size: .9em;}
+	.contentProduto .detalhesProduto .imagensProduto, .contentProduto .detalhesProduto .formProduto {width: 350px;}
+}
+@media screen and (min-width: 480px) {
+	.contentIndex .categoriaNovidade {width: 47%; float: left; margin-left: 2%;}
+	.contentBuscaOpcao .todos-produtos {width: 100%; float: left;}
+	.contentBuscaOpcao .todos-produtos .produto {width: 43%; margin: 0 1.6% 30px 4%;}
+}
+@media screen and (min-width: 640px) {
+	.contentIndex .produtosDestaques {width: 100%; float: left;}
+	.contentIndex .produtoDestaque {width: 23%; height: 300px; margin-left: 1.4%;}
+	.contentIndex .produtoDestaque img {width: 120px;}
+	.contentDados .contaPerfil .dadosUsuario label {display: inline-block; text-align: right;}
+	.contentDados .contaPerfil .dadosUsuario input, #dados-usuario select {width: 380px; margin-left: 5px;}
+	.contentDados .contaPerfil .dadosUsuario select {width: 100px;}
+}
+@media screen and (min-width: 768px) {
+	.header {padding: 8px 0 3px 0;}
+	.header #btn-menu {margin-top: 7px;}
+	.header #logotipo {width: 240px; float: left; margin: 3px 0 0 10px;}
+	.header #logoGrande {width: 240px; margin-top: 3px;	display: block;}
+	.header #logoPequena {display: none;}
+	.header #pesquisa {width: 300px; float: right; margin: 12px 40px 0 0; display: block;}
+	.header #pesquisa input:focus {outline: none;}
+	.header #pesquisa .icon-busca {width: 20px; float: right; margin: -2px 0 0 -20px; position: absolute; border: none;}
+	.header #pesquisa .icon-busca:hover {cursor: pointer;}
+	.header #pesquisa input {width: 94%; padding: 0 10px; font-size: .9em; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid #E8E8E8; color: #828282; padding: 2px 0;}
+	.header #carrinho {margin-top: 3px;}
+	.footer .informacoesFooter .informacaoFooter {width: 24%; height: 180px; float: left; text-align: left; border-right: 1px solid #CFCFCF;}
+	.footer .informacoesFooter .informacaoFooter:nth-child(4) {border-right: none;}
+	.footer .informacoesFooter .informacaoFooter h1, .footer .informacoesFooter .informacaoFooter li a, .footer .informacoesFooter .informacaoFooter p {margin-left: 10%;}
+	.footer .informacoesFooter .informacaoFooter li a, .footer .informacoesFooter .informacao-footer p {font-size: .7em;}
+	.contentBuscaOpcao .conteudoProdutos .todosProdutos .produto {width: 28%;	margin: 0 0 30px 4%;}
+	.contentLogin .loginUsuario, .contentLogin .novaContaUsuario {width: 50%;}
+	.contentLogin .novaContaUsuario {border-top: none; width: 49.8%; border-left: 1px solid #E8E8E8;}
+	.contentProduto .detalhesProduto .imagensProduto {float: left; margin-left: 6%;}
+	.contentProduto .detalhesProduto .formProduto {width: 39%; float: left; padding: 10px 0 30px 30px;}
+	.contentProduto .detalhesProduto .formProduto .quantidadeProduto {float: left;	margin-right: 10%;}
+	.contentProduto .detalhesProduto .formProduto input[type="submit"] {width: 90%;}
+}
+@media screen and (min-width: 900px) {
+	.footer .informacoesFooter .informacaoFooter li a, .footer .informacoesFooter .informacaoFooter p {font-size: .8em;}
+	.contentIndex .categoriaNovidade a {-webkit-filter: grayscale(100%);}
+	.contentIndex .categoriaNovidade a:hover {-webkit-filter: grayscale(0%); transition: .5s;}
+	.contentIndex .categoriaNovidade {width: 39%; margin-left: 7%;}
+	.contentIndex .produtoDestaque {margin-left: 1.5%;}
+}
+@media screen and (min-width: 980px) {
+	.contentIndex .produtoDestaque img {width: 140px;}
+	.contentBuscaOpcao .tituloMenu h2 {width: 94%; margin-left: 3%;}
+	.contentBuscaOpcao .conteudoProdutos .todosProdutos .produto {width: 21%; margin: 0 .2% 30px 3%;}
+	.contentProduto .detalhesProduto .imagensProduto {width: 400px; margin-left: 9%;}
+	.contentProduto .detalhesProduto .formProduto {width: 38%;}
+}
+@media screen and (min-width: 1240px) {
+	.contentProduto .detalhesProduto .formProduto {width: 47%;}
+}
+@media screen and (min-width: 2480px) {
+	.contentIndex, .contentBuscaOpcao, .contentFaq, .contentLogin, .contentDados, .contentPainelControle, .contentPoliticasPrivacidade, .contentProduto, .contentSobre, .contentTermosUso, .contentTrocasDevolucoes {width: 2480px; margin: 0 auto; float: none;}
+}
